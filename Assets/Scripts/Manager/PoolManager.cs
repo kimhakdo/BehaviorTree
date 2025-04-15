@@ -16,8 +16,8 @@ public class PoolManager : Singleton<PoolManager>
 {
     public List<PoolData> poolDatas;
     private Dictionary<string, Queue<PoolBase>> poolDic = new Dictionary<string, Queue<PoolBase>>();
-
-    private void Start()
+ 
+    private void Start() 
     {
         foreach (var poolData in poolDatas)
         {

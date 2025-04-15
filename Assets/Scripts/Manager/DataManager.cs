@@ -8,7 +8,12 @@ public class DataManager : Singleton<DataManager>
     public Dictionary<string, BaseData> datas = new Dictionary<string, BaseData> ();
     public bool isInit = false;
 
-    protected IEnumerator Start()
+    protected override void Awake()
+    { 
+        base.Awake();
+        StartCoroutine(init()); 
+    }
+    protected IEnumerator init()
     {
         yield return new WaitUntil(() => ResourceManager.Instance.isInit);
         var datas = ResourceManager.Instance.LoadAssets<BaseData>(ResourceType.Data);

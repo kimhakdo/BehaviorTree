@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UniRx;
@@ -15,10 +16,19 @@ public class GameManager : Singleton<GameManager>
         Application.targetFrameRate = 60;
         userCharacter = ResourceManager.Instance.InstantiateAsset<Character>("Character", ResourceType.Prefab);
         userCharacter.Init();
-        CreateMonster();
         //Observable.Timer(System.TimeSpan.FromSeconds(0), System.TimeSpan.FromSeconds(5))
         //    .Subscribe(_ => CreateMonster());
+
+        StartCoroutine(Test()); 
     }
+
+    private IEnumerator Test()
+    {
+        yield return new WaitUntil(() => DataManager.Instance.isInit);
+        CreateMonster(); 
+    }
+
+
 
     public void CreateMonster()
     {

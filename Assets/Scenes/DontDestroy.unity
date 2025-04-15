@@ -296,8 +296,8 @@ MonoBehaviour:
     gameObject: {fileID: 6164004132395255960, guid: e589913f8de69a2408889274f48cbb42, type: 3}
     capacity: 500
     interval: 500
-  - key: Monster
-    gameObject: {fileID: 8704504926687646495, guid: 9eac598d99aa9e042a7906b0ac008983, type: 3}
+  - key: Monster2
+    gameObject: {fileID: 5927392336101274315, guid: 9eac598d99aa9e042a7906b0ac008983, type: 3}
     capacity: 20
     interval: 10
 --- !u!4 &1218581369

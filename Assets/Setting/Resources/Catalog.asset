@@ -175,9 +175,9 @@ MonoBehaviour:
   - key: Character
     type: Prefab
     address: Prefab/Character.prefab
-  - key: Monster
+  - key: Monster2
     type: Prefab
-    address: Prefab/Monster.prefab
+    address: Prefab/Monster2.prefab
   - key: ITE00001
     type: Thumbnail
     address: Thumbnail/ITE00001.png
