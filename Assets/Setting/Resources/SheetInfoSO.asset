@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c467d2b6ddd7ebf4c917f63a28ee3a88, type: 3}
+  m_Name: SheetInfoSO
+  m_EditorClassIdentifier: 
+  outPath: {fileID: 102900000, guid: de1599b443ec5534ebb521a3b6ad74ed, type: 3}
+  url: https://docs.google.com/spreadsheets/d/1AztHQMAiaGBTf1F0MA0s0-NaIz1M8YxoEGxm_ni6L7k/
+  datas:
+  - className: ItemData
+    sheetId: 1249418767
+    key: ITE
+  - className: EnemyData
+    sheetId: 1227733515
+    key: ENE
+  - className: EquipData
+    sheetId: 430856127
+    key: EQU
+  - className: ShopData
+    sheetId: 427235159
+    key: SHO

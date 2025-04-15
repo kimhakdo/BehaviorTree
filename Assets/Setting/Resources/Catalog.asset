@@ -1,0 +1,255 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f65a5484efe9e8940b74b1b2e4457ea7, type: 3}
+  m_Name: Catalog
+  m_EditorClassIdentifier: 
+  catalogs:
+  - key: MonsterData
+    type: Data
+    address: Data/BTSaveData/MonsterData.asset
+  - key: CharacterData
+    type: Data
+    address: Data/CharacterData.asset
+  - key: ENE00001
+    type: Data
+    address: Data/ENE00001.asset
+  - key: ENE00002
+    type: Data
+    address: Data/ENE00002.asset
+  - key: ENE00003
+    type: Data
+    address: Data/ENE00003.asset
+  - key: ENE00004
+    type: Data
+    address: Data/ENE00004.asset
+  - key: ENE00005
+    type: Data
+    address: Data/ENE00005.asset
+  - key: EQU00001
+    type: Data
+    address: Data/EQU00001.asset
+  - key: EQU00002
+    type: Data
+    address: Data/EQU00002.asset
+  - key: EQU00003
+    type: Data
+    address: Data/EQU00003.asset
+  - key: EQU00004
+    type: Data
+    address: Data/EQU00004.asset
+  - key: EQU00005
+    type: Data
+    address: Data/EQU00005.asset
+  - key: EQU00006
+    type: Data
+    address: Data/EQU00006.asset
+  - key: EQU00007
+    type: Data
+    address: Data/EQU00007.asset
+  - key: EQU00008
+    type: Data
+    address: Data/EQU00008.asset
+  - key: ITE00001
+    type: Data
+    address: Data/ITE00001.asset
+  - key: ITE00002
+    type: Data
+    address: Data/ITE00002.asset
+  - key: ITE00003
+    type: Data
+    address: Data/ITE00003.asset
+  - key: ITE00004
+    type: Data
+    address: Data/ITE00004.asset
+  - key: ITE00005
+    type: Data
+    address: Data/ITE00005.asset
+  - key: ITE00006
+    type: Data
+    address: Data/ITE00006.asset
+  - key: ITE00007
+    type: Data
+    address: Data/ITE00007.asset
+  - key: ITE00008
+    type: Data
+    address: Data/ITE00008.asset
+  - key: ITE00009
+    type: Data
+    address: Data/ITE00009.asset
+  - key: ITE00010
+    type: Data
+    address: Data/ITE00010.asset
+  - key: ITE00011
+    type: Data
+    address: Data/ITE00011.asset
+  - key: ITE00012
+    type: Data
+    address: Data/ITE00012.asset
+  - key: ITE00013
+    type: Data
+    address: Data/ITE00013.asset
+  - key: ITE00014
+    type: Data
+    address: Data/ITE00014.asset
+  - key: ITE00015
+    type: Data
+    address: Data/ITE00015.asset
+  - key: ITE00016
+    type: Data
+    address: Data/ITE00016.asset
+  - key: ITE00017
+    type: Data
+    address: Data/ITE00017.asset
+  - key: ITE00018
+    type: Data
+    address: Data/ITE00018.asset
+  - key: LevelData
+    type: Data
+    address: Data/LevelData.asset
+  - key: SHO00001
+    type: Data
+    address: Data/SHO00001.asset
+  - key: SHO00002
+    type: Data
+    address: Data/SHO00002.asset
+  - key: SHO00003
+    type: Data
+    address: Data/SHO00003.asset
+  - key: SHO00004
+    type: Data
+    address: Data/SHO00004.asset
+  - key: SHO00005
+    type: Data
+    address: Data/SHO00005.asset
+  - key: SHO00006
+    type: Data
+    address: Data/SHO00006.asset
+  - key: SHO00007
+    type: Data
+    address: Data/SHO00007.asset
+  - key: SHO00008
+    type: Data
+    address: Data/SHO00008.asset
+  - key: SHO00009
+    type: Data
+    address: Data/SHO00009.asset
+  - key: SHO00010
+    type: Data
+    address: Data/SHO00010.asset
+  - key: SHO00011
+    type: Data
+    address: Data/SHO00011.asset
+  - key: SHO00012
+    type: Data
+    address: Data/SHO00012.asset
+  - key: SHO00013
+    type: Data
+    address: Data/SHO00013.asset
+  - key: SHO00014
+    type: Data
+    address: Data/SHO00014.asset
+  - key: SHO00015
+    type: Data
+    address: Data/SHO00015.asset
+  - key: SHO00016
+    type: Data
+    address: Data/SHO00016.asset
+  - key: SHO00017
+    type: Data
+    address: Data/SHO00017.asset
+  - key: SHO00018
+    type: Data
+    address: Data/SHO00018.asset
+  - key: Bullet
+    type: Prefab
+    address: Prefab/Bullet.prefab
+  - key: Character
+    type: Prefab
+    address: Prefab/Character.prefab
+  - key: Monster
+    type: Prefab
+    address: Prefab/Monster.prefab
+  - key: ITE00001
+    type: Thumbnail
+    address: Thumbnail/ITE00001.png
+  - key: ITE00002
+    type: Thumbnail
+    address: Thumbnail/ITE00002.png
+  - key: ITE00003
+    type: Thumbnail
+    address: Thumbnail/ITE00003.png
+  - key: ITE00004
+    type: Thumbnail
+    address: Thumbnail/ITE00004.png
+  - key: ITE00005
+    type: Thumbnail
+    address: Thumbnail/ITE00005.png
+  - key: ITE00006
+    type: Thumbnail
+    address: Thumbnail/ITE00006.png
+  - key: ITE00007
+    type: Thumbnail
+    address: Thumbnail/ITE00007.png
+  - key: ITE00008
+    type: Thumbnail
+    address: Thumbnail/ITE00008.png
+  - key: ITE00009
+    type: Thumbnail
+    address: Thumbnail/ITE00009.png
+  - key: ITE00010
+    type: Thumbnail
+    address: Thumbnail/ITE00010.png
+  - key: ITE00011
+    type: Thumbnail
+    address: Thumbnail/ITE00011.png
+  - key: ITE00012
+    type: Thumbnail
+    address: Thumbnail/ITE00012.png
+  - key: ITE00013
+    type: Thumbnail
+    address: Thumbnail/ITE00013.png
+  - key: ITE00014
+    type: Thumbnail
+    address: Thumbnail/ITE00014.png
+  - key: ITE00015
+    type: Thumbnail
+    address: Thumbnail/ITE00015.png
+  - key: ITE00016
+    type: Thumbnail
+    address: Thumbnail/ITE00016.png
+  - key: ITE00017
+    type: Thumbnail
+    address: Thumbnail/ITE00017.png
+  - key: ITE00018
+    type: Thumbnail
+    address: Thumbnail/ITE00018.png
+  - key: unitychan
+    type: Thumbnail
+    address: Thumbnail/unitychan.png
+  - key: PopupAlert
+    type: UI
+    address: UI/PopupAlert.prefab
+  - key: PopupInventory
+    type: UI
+    address: UI/PopupInventory.prefab
+  - key: PopupNetworkTest
+    type: UI
+    address: UI/PopupNetworkTest.prefab
+  - key: PopupShop
+    type: UI
+    address: UI/PopupShop.prefab
+  - key: PopupStatus
+    type: UI
+    address: UI/PopupStatus.prefab
+  - key: UIMain
+    type: UI
+    address: UI/UIMain.prefab

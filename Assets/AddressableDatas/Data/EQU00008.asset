@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca1d515c8b4d0104f80b2e53f6bfaffa, type: 3}
+  m_Name: EQU00008
+  m_EditorClassIdentifier: 
+  rcode: EQU00008
+  displayName: "\uD57C\uB9F7"
+  description: 
+  equipType: 3
+  atk: 0
+  def: 5
