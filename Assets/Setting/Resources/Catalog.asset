@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Catalog
   m_EditorClassIdentifier: 
   catalogs:
+  - key: Monster2Data
+    type: Data
+    address: Data/BTSaveData/Monster2Data.asset
   - key: MonsterData
     type: Data
     address: Data/BTSaveData/MonsterData.asset

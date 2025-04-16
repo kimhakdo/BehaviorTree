@@ -87,63 +87,27 @@ public class Monster2 : PoolBase
     [SerializeField] private Animator animator;  // 애니메이션 컨트롤러
     [SerializeField] private Rigidbody2D rb;  // 물리 컴포넌트
     [SerializeField] public float speed;  // 이동 속도
+    [SerializeField] BTRunner bt;    // AI 로직을 위한 행동 트리 실행기
 
     [Header("Status Effects")]
     private List<StatusEffect> activeStatusEffects = new List<StatusEffect>();  // 활성화된 상태 효과 목록
     private bool isAggroed = false;  // 어그로 상태 여부
 
     private Vector3 originPos;  // 초기 위치
-    private BTRunner bt;  // 행동 트리 러너
     private Collider2D[] colliders = new Collider2D[10];  // 충돌체 배열 (최적화용)
     private Collider2D nearbyTarget;  // 근처의 타겟
 
 
-    // 몬스터 초기화
+    //몬스터 초기화
     public void Init(EnemyData data)
     {
         enemyInfo = new EnemyInfo(data);
         originPos = transform.position;
-        SetupBehaviorTree();
-        
+        bt.SetActions(this);
         // UniRx를 사용하여 0.1초마다 행동 트리 실행
         Observable.Timer(TimeSpan.FromSeconds(0), TimeSpan.FromSeconds(0.1f))
             .Subscribe(_ => bt.Operate())
             .AddTo(gameObject);
-    }
-
-    // 행동 트리 설정
-    private void SetupBehaviorTree()
-    {
-        bt = new BTRunner();
-        var rootSelector = bt.AddSelector();
-
-        // 1. 상태이상 확인 시퀀스
-        var statusSequence = rootSelector.AddSequence();
-        statusSequence
-            .AddAction(CheckStatusEffect)
-            .AddAction(HandleStatusEffect);
-
-        // 2. 죽음 확인 시퀀스
-        var deathSequence = rootSelector.AddSequence();
-        deathSequence
-            .AddAction(CheckDead)
-            .AddAction(DoDead);
-
-        // 3. 공격 시퀀스
-        var attackSequence = rootSelector.AddSequence();
-        attackSequence
-            .AddAction(CheckAttacking)
-            .AddAction(CheckEnemyWithAttackRange)
-            .AddAction(DoAttackEnemy);
-
-        // 4. 추적 시퀀스
-        var chaseSequence = rootSelector.AddSequence();
-        chaseSequence
-            .AddAction(FindEnemy)
-            .AddAction(DoMoveToTarget);
-
-        // 5. 복귀
-        rootSelector.AddAction(DoMoveOrigin);
     }
 
     #region Status Effect Methods

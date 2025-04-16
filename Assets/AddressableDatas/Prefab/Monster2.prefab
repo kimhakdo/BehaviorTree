@@ -184,9 +184,110 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHp: 1000
-  attackRange: 5
-  detectRange: 10
+  attackRange: 3
+  detectRange: 5
   spriteRenderer: {fileID: 3957618721561541607}
   animator: {fileID: -2197608499717037243}
   rb: {fileID: 6567420771125446709}
   speed: 2
+  bt:
+    root:
+      rid: 7584708637424353590
+  references:
+    version: 2
+    RefIds:
+    - rid: 7584708637424353590
+      type: {class: RootNode, ns: Ironcow.BT, asm: Assembly-CSharp}
+      data:
+        className: RootNode
+        node:
+          rid: 7584708637424353591
+    - rid: 7584708637424353591
+      type: {class: SelectorNode, ns: Ironcow.BT, asm: Assembly-CSharp}
+      data:
+        className: SelectorNode
+        childs:
+        - rid: 7584708637424353592
+        - rid: 7584708637424353593
+        - rid: 7584708637424353594
+        - rid: 7584708637424353595
+        - rid: 7584708637424353596
+    - rid: 7584708637424353592
+      type: {class: SequenceNode, ns: Ironcow.BT, asm: Assembly-CSharp}
+      data:
+        className: SequenceNode
+        childs:
+        - rid: 7584708637424353597
+        - rid: 7584708637424353598
+    - rid: 7584708637424353593
+      type: {class: SequenceNode, ns: Ironcow.BT, asm: Assembly-CSharp}
+      data:
+        className: SequenceNode
+        childs:
+        - rid: 7584708637424353599
+        - rid: 7584708637424353600
+        - rid: 7584708637424353601
+    - rid: 7584708637424353594
+      type: {class: SequenceNode, ns: Ironcow.BT, asm: Assembly-CSharp}
+      data:
+        className: SequenceNode
+        childs:
+        - rid: 7584708637424353602
+        - rid: 7584708637424353603
+    - rid: 7584708637424353595
+      type: {class: SequenceNode, ns: Ironcow.BT, asm: Assembly-CSharp}
+      data:
+        className: SequenceNode
+        childs:
+        - rid: 7584708637424353604
+        - rid: 7584708637424353605
+    - rid: 7584708637424353596
+      type: {class: ActionNode, ns: Ironcow.BT, asm: Assembly-CSharp}
+      data:
+        className: ActionNode
+        funcName: DoMoveOrigin
+    - rid: 7584708637424353597
+      type: {class: ActionNode, ns: Ironcow.BT, asm: Assembly-CSharp}
+      data:
+        className: ActionNode
+        funcName: CheckDead
+    - rid: 7584708637424353598
+      type: {class: ActionNode, ns: Ironcow.BT, asm: Assembly-CSharp}
+      data:
+        className: ActionNode
+        funcName: DoDead
+    - rid: 7584708637424353599
+      type: {class: ActionNode, ns: Ironcow.BT, asm: Assembly-CSharp}
+      data:
+        className: ActionNode
+        funcName: CheckAttacking
+    - rid: 7584708637424353600
+      type: {class: ActionNode, ns: Ironcow.BT, asm: Assembly-CSharp}
+      data:
+        className: ActionNode
+        funcName: CheckEnemyWithAttackRange
+    - rid: 7584708637424353601
+      type: {class: ActionNode, ns: Ironcow.BT, asm: Assembly-CSharp}
+      data:
+        className: ActionNode
+        funcName: DoAttackEnemy
+    - rid: 7584708637424353602
+      type: {class: ActionNode, ns: Ironcow.BT, asm: Assembly-CSharp}
+      data:
+        className: ActionNode
+        funcName: FindEnemy
+    - rid: 7584708637424353603
+      type: {class: ActionNode, ns: Ironcow.BT, asm: Assembly-CSharp}
+      data:
+        className: ActionNode
+        funcName: DoMoveToTarget
+    - rid: 7584708637424353604
+      type: {class: ActionNode, ns: Ironcow.BT, asm: Assembly-CSharp}
+      data:
+        className: ActionNode
+        funcName: CheckStatusEffect
+    - rid: 7584708637424353605
+      type: {class: ActionNode, ns: Ironcow.BT, asm: Assembly-CSharp}
+      data:
+        className: ActionNode
+        funcName: HandleStatusEffect
